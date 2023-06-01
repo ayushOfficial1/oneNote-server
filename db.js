@@ -1,8 +1,13 @@
+require('dotenv').config();
 const mongoose = require("mongoose");
-mongoURL = "mongodb://127.0.0.1:27017/oneNote";
+const mongoURL = process.env.MONGO_URL;
 
 const mongoConnect = () => {
-  mongoose.connect(mongoURL);
+ console.log(mongoURL);
+ mongoose.connect(mongoURL);
 };
 
 module.exports = mongoConnect;
+
+
+// mongoURL = "mongodb://127.0.0.1:27017/oneNote";
