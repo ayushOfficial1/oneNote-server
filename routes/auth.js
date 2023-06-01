@@ -5,7 +5,7 @@ const validator = require("validator");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const fetchUser = require("../middleware/fetchUser");
-const { ConstructionOutlined } = require("@mui/icons-material");
+
 
 const SEC_KEY = "we are the warriors that build this town";
 
